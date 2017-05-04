@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F35C7CA58D01CC6D54B80F8 /* Pods_StoreKitUserInfo_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E52C562D2F1A51D81681B5 /* Pods_StoreKitUserInfo_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		69BF0E271EBB539E006CF523 /* StoreKitUserInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF0E261EBB539E006CF523 /* StoreKitUserInfoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,7 +16,7 @@
 		54E52C562D2F1A51D81681B5 /* Pods_StoreKitUserInfo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreKitUserInfo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* StoreKitUserInfo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKitUserInfo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		69BF0E261EBB539E006CF523 /* StoreKitUserInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKitUserInfoTests.swift; sourceTree = "<group>"; };
 		6D52EE6F30F9782E746954CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7D2221278D7513E4DFB79DB9 /* Pods-StoreKitUserInfo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreKitUserInfo_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoreKitUserInfo_Tests/Pods-StoreKitUserInfo_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BAE035E82698AC2AF6229510 /* StoreKitUserInfo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StoreKitUserInfo.podspec; path = ../StoreKitUserInfo.podspec; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				69BF0E261EBB539E006CF523 /* StoreKitUserInfoTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = MS5H3BD7U5;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				69BF0E271EBB539E006CF523 /* StoreKitUserInfoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D566E8BDACC5366D136015F /* Pods-StoreKitUserInfo_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MS5H3BD7U5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -331,6 +332,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -339,6 +341,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D2221278D7513E4DFB79DB9 /* Pods-StoreKitUserInfo_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MS5H3BD7U5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
