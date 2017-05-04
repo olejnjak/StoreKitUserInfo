@@ -6,9 +6,15 @@
 //
 //
 
-import StoreKit
+import class StoreKit.SKPaymentTransaction
 
-extension SKPaymentTransaction {
+protocol PaymentTransactionProtocol {
+    var transactionIdentifier: String? { get }
+}
+
+extension SKPaymentTransaction: PaymentTransactionProtocol { }
+
+extension PaymentTransactionProtocol {
  
     func getUserInfo<Result: StoreKitUserInfo>() -> Result? {
         return transactionIdentifier.flatMap { StoreKitStore.loadUserInfo(forKey: $0) }

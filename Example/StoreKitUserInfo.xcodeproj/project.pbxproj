@@ -11,6 +11,7 @@
 		69BF0E271EBB539E006CF523 /* StoreKitUserInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF0E261EBB539E006CF523 /* StoreKitUserInfoTests.swift */; };
 		69BF0E291EBB554A006CF523 /* UserDefaultsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF0E281EBB554A006CF523 /* UserDefaultsStoreTests.swift */; };
 		69BF0E2B1EBB5801006CF523 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF0E2A1EBB5801006CF523 /* TestHelpers.swift */; };
+		69BF0E2D1EBB58F6006CF523 /* SKPaymentTransactionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF0E2C1EBB58F6006CF523 /* SKPaymentTransactionExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		69BF0E261EBB539E006CF523 /* StoreKitUserInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKitUserInfoTests.swift; sourceTree = "<group>"; };
 		69BF0E281EBB554A006CF523 /* UserDefaultsStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStoreTests.swift; sourceTree = "<group>"; };
 		69BF0E2A1EBB5801006CF523 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		69BF0E2C1EBB58F6006CF523 /* SKPaymentTransactionExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPaymentTransactionExtensionsTests.swift; sourceTree = "<group>"; };
 		6D52EE6F30F9782E746954CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7D2221278D7513E4DFB79DB9 /* Pods-StoreKitUserInfo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreKitUserInfo_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoreKitUserInfo_Tests/Pods-StoreKitUserInfo_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BAE035E82698AC2AF6229510 /* StoreKitUserInfo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StoreKitUserInfo.podspec; path = ../StoreKitUserInfo.podspec; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				69BF0E261EBB539E006CF523 /* StoreKitUserInfoTests.swift */,
 				69BF0E281EBB554A006CF523 /* UserDefaultsStoreTests.swift */,
 				69BF0E2A1EBB5801006CF523 /* TestHelpers.swift */,
+				69BF0E2C1EBB58F6006CF523 /* SKPaymentTransactionExtensionsTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69BF0E291EBB554A006CF523 /* UserDefaultsStoreTests.swift in Sources */,
+				69BF0E2D1EBB58F6006CF523 /* SKPaymentTransactionExtensionsTests.swift in Sources */,
 				69BF0E271EBB539E006CF523 /* StoreKitUserInfoTests.swift in Sources */,
 				69BF0E2B1EBB5801006CF523 /* TestHelpers.swift in Sources */,
 			);
