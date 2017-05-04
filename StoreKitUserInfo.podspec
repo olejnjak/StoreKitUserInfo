@@ -26,7 +26,7 @@ Save your own user info to your StoreKit transactions
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'olejnjak' => 'olejnjak@gmail.com' }
   s.source           = { :git => 'https://github.com/olejnjak/StoreKitUserInfo.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/olejnjak
+  s.social_media_url = 'https://twitter.com/olejnjak'
 
   s.ios.deployment_target = '8.3'
 
