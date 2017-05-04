@@ -27,7 +27,7 @@ extension UserDefaults: StoreKitUserInfoStore {
                 .flatMap { $0 as? [String: String] } ?? [:]
         }
         set {
-            guard let data = try? JSONSerialization.data(withJSONObject: storage, options: .init(rawValue: 0)) else { return }
+            guard let data = try? JSONSerialization.data(withJSONObject: newValue, options: .init(rawValue: 0)) else { return }
             set(data, forKey: UserDefaults.key)
             synchronize()
         }
