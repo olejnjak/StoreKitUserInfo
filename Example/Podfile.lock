@@ -1,0 +1,16 @@
+PODS:
+  - StoreKitUserInfo (0.1.0)
+
+DEPENDENCIES:
+  - StoreKitUserInfo (from `../`)
+
+EXTERNAL SOURCES:
+  StoreKitUserInfo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  StoreKitUserInfo: 4510cf2f4e165d9c2c083526cf7071acf17e8506
+
+PODFILE CHECKSUM: ec62ce2f24415fe735adb2bd781a3c009c5d669b
+
+COCOAPODS: 1.2.1

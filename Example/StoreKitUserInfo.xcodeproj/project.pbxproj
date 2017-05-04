@@ -17,10 +17,10 @@
 		607FACE51AFB9204008FA782 /* StoreKitUserInfo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKitUserInfo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6D52EE6F30F9782E746954CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6D52EE6F30F9782E746954CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7D2221278D7513E4DFB79DB9 /* Pods-StoreKitUserInfo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreKitUserInfo_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoreKitUserInfo_Tests/Pods-StoreKitUserInfo_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BAE035E82698AC2AF6229510 /* StoreKitUserInfo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = StoreKitUserInfo.podspec; path = ../StoreKitUserInfo.podspec; sourceTree = "<group>"; };
-		C6E9CC0541730E1363CE5AF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BAE035E82698AC2AF6229510 /* StoreKitUserInfo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StoreKitUserInfo.podspec; path = ../StoreKitUserInfo.podspec; sourceTree = "<group>"; };
+		C6E9CC0541730E1363CE5AF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +131,9 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MS5H3BD7U5;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -321,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D566E8BDACC5366D136015F /* Pods-StoreKitUserInfo_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = MS5H3BD7U5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -341,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D2221278D7513E4DFB79DB9 /* Pods-StoreKitUserInfo_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = MS5H3BD7U5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
