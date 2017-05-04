@@ -14,6 +14,8 @@ protocol StoreKitUserInfoStore {
     func loadUserInfo<Result: StoreKitUserInfo>(forKey key: String) -> Result?
 }
 
+var StoreKitStore: StoreKitUserInfoStore = UserDefaults.standard
+
 extension UserDefaults: StoreKitUserInfoStore {
     private static var key = "sdasq3e1jh4b15ou2y98yh29_storekituserinfo_storage_3298482wiugui2g3y8ig42i3brvy23t"
     
