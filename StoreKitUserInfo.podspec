@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-Save your own user info to your StoreKit transactions
-                       DESC
+#s.description      = <<-DESC
+#Save your own user info to your StoreKit transactions
+#                       DESC
 
   s.homepage         = 'https://github.com/olejnjak/StoreKitUserInfo'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -37,6 +37,6 @@ Save your own user info to your StoreKit transactions
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'StoreKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
