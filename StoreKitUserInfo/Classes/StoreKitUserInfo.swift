@@ -8,29 +8,29 @@
 
 import Foundation
 
-protocol StoreKitUserInfo {
+public protocol StoreKitUserInfo {
     var stringRepresentation: String { get }
     
     init?(stringRepresentation: String)
 }
 
 extension Int: StoreKitUserInfo {
-    var stringRepresentation: String {
+    public var stringRepresentation: String {
         return String(self)
     }
     
-    init?(stringRepresentation: String) {
+    public init?(stringRepresentation: String) {
         guard let int = Int(stringRepresentation) else { return nil }
         self = int
     }
 }
 
 extension String: StoreKitUserInfo {
-    var stringRepresentation: String {
+    public var stringRepresentation: String {
         return self
     }
     
-    init?(stringRepresentation: String) {
+    public init?(stringRepresentation: String) {
         self = stringRepresentation
     }
 }

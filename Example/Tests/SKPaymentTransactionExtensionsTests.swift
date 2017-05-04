@@ -8,7 +8,7 @@
 
 import XCTest
 import StoreKit
-@testable import StoreKitUserInfo
+import StoreKitUserInfo
 
 private struct TestTransaction: PaymentTransactionProtocol {
     let transactionIdentifier: String?

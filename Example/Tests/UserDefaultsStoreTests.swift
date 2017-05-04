@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import StoreKitUserInfo
+import StoreKitUserInfo
 
 class UserDefaultsStoreTests: XCTestCase {
     
