@@ -1,0 +1,6 @@
+use_frameworks!
+target 'StoreKitUserInfo_Tests' do
+  pod 'StoreKitUserInfo', :path => '../'
+  
+  
+end
