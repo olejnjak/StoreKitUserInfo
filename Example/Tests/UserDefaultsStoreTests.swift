@@ -49,4 +49,21 @@ class UserDefaultsStoreTests: XCTestCase {
         
         XCTAssertEqual(string, savedString)
     }
+    
+    func testDeletion() {
+        let string = String.random
+        let key = String.random
+        
+        store.save(userInfo: string, forKey: key)
+        
+        let savedString: String? = store.loadUserInfo(forKey: key)
+        
+        XCTAssertEqual(string, savedString)
+        
+        store.deleteUserInfo(forKey: key)
+        
+        let savedString2: String? = store.loadUserInfo(forKey: key)
+        
+        XCTAssertNil(savedString2)
+    }
 }
