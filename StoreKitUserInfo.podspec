@@ -30,7 +30,7 @@ Simply store any data you like to your StoreKit transactions
 
   s.ios.deployment_target = '8.3'
 
-  s.source_files = 'StoreKitUserInfo/Classes/**/*'
+  s.source_files = 'StoreKitUserInfo/**/*'
 
   # s.resource_bundles = {
   #   'StoreKitUserInfo' => ['StoreKitUserInfo/Assets/*.png']
