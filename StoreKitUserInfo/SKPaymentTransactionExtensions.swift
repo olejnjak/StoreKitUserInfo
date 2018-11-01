@@ -15,7 +15,6 @@ public protocol PaymentTransactionProtocol {
 extension SKPaymentTransaction: PaymentTransactionProtocol { }
 
 extension PaymentTransactionProtocol {
- 
     public func getUserInfo<Result: StoreKitUserInfo>() -> Result? {
         return transactionIdentifier.flatMap { StoreKitStore.loadUserInfo(forKey: $0) }
     }
