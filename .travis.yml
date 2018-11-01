@@ -1,11 +1,27 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
-osx_image: xcode9.2
+osx_image: xcode10
 language: objective-c
+env:
+  global:
+  - FRAMEWORK_NAME=StoreKitUserInfo
+cache:
+  directories:
+  - Carthage
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
+- brew update
+- brew outdated carthage || brew upgrade carthage
 script:
-- set -o pipefail && xcodebuild -scheme "StoreKitUserInfo iOS" -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
+- carthage build --no-skip-current --cache-builds --platform iOS
 - pod lib lint
+before_deploy:
+- carthage archive --output "$FRAMEWORK_NAME.framework.zip"
+after_deploy:
+- pod trunk push
+deploy:
+  provider: releases
+  api_key:
+    secure: nzh/W+W5Ggb+in7cjYIe1c0Yy5bFMBR0/Rz3JKJvLap0JL28ZtGYv+OjxOilYHTA9nhbgmESZrnjxmJgSIs6hdSIUPXjGg2rVJMUcrD08yY+bb1w+k06k8DyWrouP7etkXC+PnPGpROEz9q+bxwQO1tCgZuWPd4yF1eLSBrIWEOuu7eRl9ekWxM2QShJM40lztGvcKlP4qqgv8cruLEzsyBb4BpTTQBSDO3mRKsDBwjFQ4Nn2XXL96myfXPmg+wPH9MLvuDL2y0mW8tUnYrNBKgkzs8hSRaAEOvx1532Fvb21nrFlhFeGePFmJ0euHHwu6xDzVBypRs0OeVIm5Vi4nb5AZ/f9qfJa7kEWtN4Rm91b+CJzx0WQYxCYPyi7WzoU/MxVC1AuBGvyS57wZF9+EZ6XXrvBOzLbMvqL7neLhOy8Yzc62+Aw2KC/yIWiPyCClx8TjNXVih1YK1IU6HckgMblenp+bOP1aTnSEdvfcNP18ZA3WiCvAYweAb0iddwh+qVjUNBT20HuUXCjvG0z1shJk/n+rZejpsnFePRRwmq4Db5kI4AGMzv1n+L2eLSzPKaimDNrxnRwadB4BP3Fleh6uF4I6msDt8ZsHI2jcOy6ZpuRW6e/M00BfaE/e9iHh5lHQ33PL2HJEkoN7k5bRucbtOulmEi/O1HhYRq+0o=
+  file: "$FRAMEWORK_NAME.framework.zip"
+  skip_cleanup: true
+  on:
+    repo: olejnjak/StoreKitUserInfo
+    tags: true
