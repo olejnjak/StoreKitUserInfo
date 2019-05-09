@@ -12,5 +12,5 @@ Simply store any data you like to your StoreKit transactions
   s.social_media_url = 'https://twitter.com/olejnjak'
   s.ios.deployment_target = '8.3'
   s.source_files = 'StoreKitUserInfo/**/*.swift'
-  s.swift_version = '4.2.1'
+  s.swift_version = '5.0'
 end
