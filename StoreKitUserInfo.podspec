@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'StoreKitUserInfo'
-  s.version          = '1.2.1'
+  s.version          = '1.3.0'
   s.summary          = 'Save user info to StoreKit transactions'
   s.description      = <<-DESC
 Simply store any data you like to your StoreKit transactions
