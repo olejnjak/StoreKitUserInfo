@@ -11,6 +11,6 @@ Simply store any data you like to your StoreKit transactions
   s.source           = { :git => 'https://github.com/olejnjak/StoreKitUserInfo.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/olejnjak'
   s.ios.deployment_target = '11.0'
-  s.source_files = 'StoreKitUserInfo/**/*.swift'
+  s.source_files = 'Sources/StoreKitUserInfo/**/*.swift'
   s.swift_version = '5.0'
 end
