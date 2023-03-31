@@ -1,9 +1,6 @@
 # StoreKitUserInfo
 
-[![CI Status](http://img.shields.io/travis/olejnjak/StoreKitUserInfo.svg?style=flat)](https://travis-ci.org/olejnjak/StoreKitUserInfo)
-[![Version](https://img.shields.io/cocoapods/v/StoreKitUserInfo.svg?style=flat)](http://cocoapods.org/pods/StoreKitUserInfo)
-[![License](https://img.shields.io/cocoapods/l/StoreKitUserInfo.svg?style=flat)](http://cocoapods.org/pods/StoreKitUserInfo)
-[![Platform](https://img.shields.io/cocoapods/p/StoreKitUserInfo.svg?style=flat)](http://cocoapods.org/pods/StoreKitUserInfo)
+[![Build](https://github.com/olejnjak/StoreKitUserInfo/actions/workflows/build.yml/badge.svg)](https://github.com/olejnjak/StoreKitUserInfo/actions/workflows/build.yml)
 
 ## Example
 
