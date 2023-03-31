@@ -1,11 +1,3 @@
-//
-//  StoreKitUserInfo.swift
-//  Pods
-//
-//  Created by Jakub Olejník on 04/05/2017.
-//
-//
-
 import Foundation
 
 public protocol StoreKitUserInfo {

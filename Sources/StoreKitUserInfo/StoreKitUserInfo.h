@@ -1,10 +1,3 @@
-//
-//  StoreKitUserInfo_iOS.h
-//  StoreKitUserInfo iOS
-//
-//  Created by Jakub Olejník on 05/03/2018.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for StoreKitUserInfo_iOS.
