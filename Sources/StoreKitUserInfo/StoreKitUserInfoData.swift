@@ -1,12 +1,12 @@
 import Foundation
 
-public protocol StoreKitUserInfo {
+public protocol StoreKitUserInfoData {
     var stringRepresentation: String { get }
     
     init?(stringRepresentation: String)
 }
 
-extension Int: StoreKitUserInfo {
+extension Int: StoreKitUserInfoData {
     public var stringRepresentation: String {
         return String(self)
     }
@@ -17,7 +17,7 @@ extension Int: StoreKitUserInfo {
     }
 }
 
-extension String: StoreKitUserInfo {
+extension String: StoreKitUserInfoData {
     public var stringRepresentation: String {
         return self
     }

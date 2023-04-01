@@ -1,4 +1,4 @@
-import class StoreKit.SKPaymentTransaction
+import StoreKit
 
 public protocol PaymentTransactionProtocol {
     var transactionIdentifier: String? { get }
@@ -7,11 +7,11 @@ public protocol PaymentTransactionProtocol {
 extension SKPaymentTransaction: PaymentTransactionProtocol { }
 
 extension PaymentTransactionProtocol {
-    public func getUserInfo<Result: StoreKitUserInfo>() -> Result? {
+    public func getUserInfo<Result: StoreKitUserInfoData>() -> Result? {
         return transactionIdentifier.flatMap { StoreKitStore.loadUserInfo(forKey: $0) }
     }
     
-    public func setUserInfo(_ userInfo: StoreKitUserInfo?) {
+    public func setUserInfo(_ userInfo: StoreKitUserInfoData?) {
         guard let transactionIdentifier = transactionIdentifier else { return }
         
         if let userInfo = userInfo {

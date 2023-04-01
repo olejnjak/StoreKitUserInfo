@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		697BE1BF204DCD8B00183828 /* StoreKitUserInfo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 697BE1BE204DCD8B00183828 /* StoreKitUserInfo.podspec */; };
-		698DDB5D29D71BAA00FC5B0B /* StoreKitUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698DDB5929D71BAA00FC5B0B /* StoreKitUserInfo.swift */; };
+		698DDB5D29D71BAA00FC5B0B /* StoreKitUserInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698DDB5929D71BAA00FC5B0B /* StoreKitUserInfoData.swift */; };
 		698DDB5E29D71BAA00FC5B0B /* SKPaymentTransactionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698DDB5A29D71BAA00FC5B0B /* SKPaymentTransactionExtensions.swift */; };
-		698DDB5F29D71BAA00FC5B0B /* StoreKitUserInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698DDB5B29D71BAA00FC5B0B /* StoreKitUserInfoStore.swift */; };
+		698DDB5F29D71BAA00FC5B0B /* StoreKitUserInfoStoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698DDB5B29D71BAA00FC5B0B /* StoreKitUserInfoStoreData.swift */; };
 		698DDB6029D71BAA00FC5B0B /* StoreKitUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 698DDB5C29D71BAA00FC5B0B /* StoreKitUserInfo.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		697BE1A9204DCD1500183828 /* StoreKitUserInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StoreKitUserInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697BE1BE204DCD8B00183828 /* StoreKitUserInfo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = StoreKitUserInfo.podspec; sourceTree = "<group>"; };
-		698DDB5929D71BAA00FC5B0B /* StoreKitUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKitUserInfo.swift; sourceTree = "<group>"; };
+		698DDB5929D71BAA00FC5B0B /* StoreKitUserInfoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKitUserInfoData.swift; sourceTree = "<group>"; };
 		698DDB5A29D71BAA00FC5B0B /* SKPaymentTransactionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPaymentTransactionExtensions.swift; sourceTree = "<group>"; };
-		698DDB5B29D71BAA00FC5B0B /* StoreKitUserInfoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKitUserInfoStore.swift; sourceTree = "<group>"; };
+		698DDB5B29D71BAA00FC5B0B /* StoreKitUserInfoStoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKitUserInfoStoreData.swift; sourceTree = "<group>"; };
 		698DDB5C29D71BAA00FC5B0B /* StoreKitUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreKitUserInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,9 +54,9 @@
 		698DDB5829D71BAA00FC5B0B /* StoreKitUserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				698DDB5929D71BAA00FC5B0B /* StoreKitUserInfo.swift */,
+				698DDB5929D71BAA00FC5B0B /* StoreKitUserInfoData.swift */,
 				698DDB5A29D71BAA00FC5B0B /* SKPaymentTransactionExtensions.swift */,
-				698DDB5B29D71BAA00FC5B0B /* StoreKitUserInfoStore.swift */,
+				698DDB5B29D71BAA00FC5B0B /* StoreKitUserInfoStoreData.swift */,
 				698DDB5C29D71BAA00FC5B0B /* StoreKitUserInfo.h */,
 			);
 			name = StoreKitUserInfo;
@@ -145,8 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				698DDB5D29D71BAA00FC5B0B /* StoreKitUserInfo.swift in Sources */,
-				698DDB5F29D71BAA00FC5B0B /* StoreKitUserInfoStore.swift in Sources */,
+				698DDB5D29D71BAA00FC5B0B /* StoreKitUserInfoData.swift in Sources */,
+				698DDB5F29D71BAA00FC5B0B /* StoreKitUserInfoStoreData.swift in Sources */,
 				698DDB5E29D71BAA00FC5B0B /* SKPaymentTransactionExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

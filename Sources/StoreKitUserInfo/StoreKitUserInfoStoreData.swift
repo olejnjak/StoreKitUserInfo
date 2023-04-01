@@ -2,8 +2,8 @@ import Foundation
 
 public protocol StoreKitUserInfoStore {
     func deleteUserInfo(forKey key: String)
-    func save(userInfo: StoreKitUserInfo, forKey key: String)
-    func loadUserInfo<Result: StoreKitUserInfo>(forKey key: String) -> Result?
+    func save(userInfo: StoreKitUserInfoData, forKey key: String)
+    func loadUserInfo<Result: StoreKitUserInfoData>(forKey key: String) -> Result?
 }
 
 public var StoreKitStore: StoreKitUserInfoStore = UserDefaults.standard
@@ -31,13 +31,13 @@ extension UserDefaults: StoreKitUserInfoStore {
         self.storage = storage
     }
     
-    public func save(userInfo: StoreKitUserInfo, forKey key: String) {
+    public func save(userInfo: StoreKitUserInfoData, forKey key: String) {
         var storage = self.storage
         storage[key] = userInfo.stringRepresentation
         self.storage = storage
     }
     
-    public func loadUserInfo<Result: StoreKitUserInfo>(forKey key: String) -> Result? {
+    public func loadUserInfo<Result: StoreKitUserInfoData>(forKey key: String) -> Result? {
         return storage[key].flatMap { Result(stringRepresentation: $0) }
     }
 }
