@@ -12,23 +12,19 @@ on:
       - .github/**
 jobs:
   spm:
-    runs-on: macos-latest
+    runs-on: macos-14
     steps:
-    - uses: actions/checkout@v3.5.0
-    - uses: AckeeCZ/load-xcode-version@1.1.0
+    - uses: actions/checkout@v4
+    - uses: AckeeCZ/load-xcode-version@v1
     - name: SPM build
-      run: swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios16.2-simulator"
+      run: |
+        rm -r StoreKitUserInfo.xcodeproj # otherwise will not use SPM
+        set -e pipefail
+        xcodebuild -scheme StoreKitUserInfo -destination 'generic/platform=iOS Simulator' | xcpretty
   carthage:
-    runs-on: macos-latest
+    runs-on: macos-14
     steps:
-    - uses: actions/checkout@v3.5.0
-    - uses: AckeeCZ/load-xcode-version@1.1.0
+    - uses: actions/checkout@v4
+    - uses: AckeeCZ/load-xcode-version@v1
     - name: Carthage build
       run: carthage build --platform iOS --use-xcframeworks --no-skip-current
-  cocoapods:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v3.5.0
-    - uses: AckeeCZ/load-xcode-version@1.1.0
-    - name: Cocoapods lint
-      run: pod lib lint
