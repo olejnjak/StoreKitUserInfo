@@ -1,15 +1,20 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.10
 import PackageDescription
 
 let package = Package(
     name: "StoreKitUserInfo",
     platforms: [
-        .iOS(.v11),
+        .iOS(.v12),
     ],
     products: [
         .library(name: "StoreKitUserInfo", targets: ["StoreKitUserInfo"]),
     ],
     targets: [
-        .target(name: "StoreKitUserInfo")
+        .target(
+            name: "StoreKitUserInfo",
+            resources: [
+                .copy("PrivacyInfo.xcprivacy"),
+            ]
+        )
     ]
 )
